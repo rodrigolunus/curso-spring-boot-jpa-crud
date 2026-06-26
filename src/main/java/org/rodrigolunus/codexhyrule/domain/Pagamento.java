@@ -1,5 +1,6 @@
 package org.rodrigolunus.codexhyrule.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import org.rodrigolunus.codexhyrule.domain.enums.EstadoPagamento;
 
@@ -16,6 +17,7 @@ public abstract class Pagamento implements Serializable {
 
     private Integer estado;
 
+    @JsonIgnore
     @OneToOne
     @JoinColumn(name = "pedido_id")
     @MapsId

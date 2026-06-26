@@ -1,5 +1,6 @@
 package org.rodrigolunus.codexhyrule.domain;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.Entity;
 import org.rodrigolunus.codexhyrule.domain.enums.EstadoPagamento;
 
@@ -9,8 +10,10 @@ import java.util.Date;
 public class PagamentoComBoleto extends Pagamento {
     private static final long serialVersionUID = 1L;
 
-
+    @JsonFormat(pattern = "dd//MM/yyyy")
     private Date dataVencimento;
+
+    @JsonFormat(pattern = "dd//MM/yyyy")
     private Date dataPagamento;
 
     public PagamentoComBoleto() {
@@ -19,7 +22,7 @@ public class PagamentoComBoleto extends Pagamento {
 
     public PagamentoComBoleto(Integer id, EstadoPagamento estado, Pedido pedido,
                               Date dataVencimento, Date dataPagamento) {
-        super(id,estado,pedido);
+        super(id, estado, pedido);
         this.dataVencimento = dataVencimento;
         this.dataPagamento = dataPagamento;
     }
