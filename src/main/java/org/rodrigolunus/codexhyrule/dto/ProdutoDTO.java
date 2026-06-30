@@ -1,29 +1,25 @@
 package org.rodrigolunus.codexhyrule.dto;
 
 
-import org.hibernate.validator.constraints.Length;
-import org.rodrigolunus.codexhyrule.domain.Categoria;
+import org.rodrigolunus.codexhyrule.domain.Produto;
 
-import javax.validation.constraints.NotBlank;
 import java.io.Serializable;
 
-public class CategoriaDTO implements Serializable {
-
+public class ProdutoDTO implements Serializable {
     private static final long serialVersionUID = 1L;
 
     private Integer id;
-
-    @NotBlank(message = "O preenchimento é obrigatório")
-    @Length(min = 5, max = 80, message = "O tamanho deve ser entre 5 e 80 caracteres")
     private String nome;
+    private Double preco;
 
 
-    public CategoriaDTO() {
+    public ProdutoDTO() {
     }
 
-    public CategoriaDTO(Categoria obj) {
+    public ProdutoDTO(Produto obj) {
         id = obj.getId();
         nome = obj.getNome();
+        preco = obj.getPreco();
     }
 
     public Integer getId() {
@@ -40,5 +36,13 @@ public class CategoriaDTO implements Serializable {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public Double getPreco() {
+        return preco;
+    }
+
+    public void setPreco(Double preco) {
+        this.preco = preco;
     }
 }

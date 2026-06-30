@@ -31,7 +31,6 @@ public class Produto implements Serializable {
     private Set<ItemPedido> itens = new HashSet<>();
 
 
-
     public Produto() {
     }
 

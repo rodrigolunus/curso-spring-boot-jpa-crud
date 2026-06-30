@@ -22,7 +22,7 @@ public class Pedido implements Serializable {
     private Date instante;
 
 
-    @OneToOne(cascade = CascadeType.ALL, mappedBy="pedido")
+    @OneToOne(cascade = CascadeType.ALL, mappedBy = "pedido")
     private Pagamento pagamento;
 
     @ManyToOne
@@ -46,6 +46,14 @@ public class Pedido implements Serializable {
         this.instante = instante;
         this.cliente = cliente;
         this.enderecoDeEntrega = enderecoDeEntrega;
+    }
+
+    public double getValorTotal() {
+        double valorTotal = 0;
+        for (ItemPedido item : itens) {
+            valorTotal += item.getSubtotal();
+        }
+        return valorTotal;
     }
 
     public Integer getId() {

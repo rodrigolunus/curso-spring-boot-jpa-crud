@@ -1,8 +1,6 @@
 package org.rodrigolunus.codexhyrule.domain;
 
 
-
-
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Objects;
@@ -13,11 +11,11 @@ public class Cidade implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private  Integer id;
+    private Integer id;
     private String nome;
 
     @ManyToOne
-    @JoinColumn(name ="estado_id" )
+    @JoinColumn(name = "estado_id")
     private Estado estado;
 
 

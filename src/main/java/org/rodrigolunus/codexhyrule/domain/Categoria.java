@@ -1,8 +1,6 @@
 package org.rodrigolunus.codexhyrule.domain;
 
 
-
-
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.ArrayList;

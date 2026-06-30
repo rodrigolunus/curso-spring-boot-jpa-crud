@@ -6,7 +6,7 @@ import org.rodrigolunus.codexhyrule.domain.enums.EstadoPagamento;
 import javax.persistence.Entity;
 
 @Entity
-public class PagamentoComCartao extends Pagamento{
+public class PagamentoComCartao extends Pagamento {
     private static final long serialVersionUID = 1L;
 
 
