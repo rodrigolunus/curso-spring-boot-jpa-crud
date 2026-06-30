@@ -1,10 +1,12 @@
 package org.rodrigolunus.codexhyrule.dto;
 
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotEmpty;
+
+
+
 import org.hibernate.validator.constraints.Length;
 import org.rodrigolunus.codexhyrule.domain.Categoria;
 
+import javax.validation.constraints.NotBlank;
 import java.io.Serializable;
 
 public class CategoriaDTO implements Serializable {

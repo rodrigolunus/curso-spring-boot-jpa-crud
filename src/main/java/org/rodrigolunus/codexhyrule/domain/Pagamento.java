@@ -1,9 +1,10 @@
 package org.rodrigolunus.codexhyrule.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import jakarta.persistence.*;
+
 import org.rodrigolunus.codexhyrule.domain.enums.EstadoPagamento;
 
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Objects;
 

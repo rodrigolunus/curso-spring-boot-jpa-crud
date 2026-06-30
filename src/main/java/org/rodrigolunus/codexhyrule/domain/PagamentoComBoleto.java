@@ -1,9 +1,9 @@
 package org.rodrigolunus.codexhyrule.domain;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import jakarta.persistence.Entity;
 import org.rodrigolunus.codexhyrule.domain.enums.EstadoPagamento;
 
+import javax.persistence.Entity;
 import java.util.Date;
 
 @Entity

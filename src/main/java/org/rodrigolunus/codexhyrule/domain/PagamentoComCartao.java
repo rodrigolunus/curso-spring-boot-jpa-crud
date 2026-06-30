@@ -1,7 +1,9 @@
 package org.rodrigolunus.codexhyrule.domain;
 
-import jakarta.persistence.Entity;
+
 import org.rodrigolunus.codexhyrule.domain.enums.EstadoPagamento;
+
+import javax.persistence.Entity;
 
 @Entity
 public class PagamentoComCartao extends Pagamento{

@@ -2,9 +2,10 @@ package org.rodrigolunus.codexhyrule.domain;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import jakarta.persistence.*;
+
 import org.rodrigolunus.codexhyrule.domain.enums.TipoCliente;
 
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.*;
 
