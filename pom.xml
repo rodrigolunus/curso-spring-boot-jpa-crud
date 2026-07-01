@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>org.rodrigolunus</groupId>
-    <artifactId>codex-hyrule</artifactId>
+    <artifactId>curso-spring-boot-jpa-crud</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>codex-hyrule</name>
-    <description>codex-hyrule</description>
+    <name>curso-spring-boot-jpa-crud</name>
+    <description>curso-spring-boot-jpa-crud</description>
     <url/>
     <licenses>
         <license/>
